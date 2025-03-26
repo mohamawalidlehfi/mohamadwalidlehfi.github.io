@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şehirlerde En Çok Aranan Ürünler</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-indigo-400 to-green-500 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-2xl shadow-2xl text-center max-w-md">
+        <h1 class="text-3xl font-extrabold mb-4 text-gray-800">Şehirlerde En Çok Aranan Ürünler</h1>
+        <button onclick="getPopularProducts()" class="bg-gradient-to-r from-yellow-400 to-red-500 hover:from-yellow-500 hover:to-red-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition transform hover:scale-105">
+            Ürünleri Göster
+        </button>
+        <button onclick="getPopularProducts()" class="bg-gradient-to-r from-blue-400 to-purple-500 hover:from-blue-500 hover:to-purple-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition transform hover:scale-105 mt-4">
+            Ürünleri Güncelle
+        </button>
+        <div id="product-list" class="mt-6 grid grid-cols-1 gap-2
+        "></div>
+        <pre id="json-output" class="mt-6 bg-gray-200 p-4 rounded-lg text-left overflow-auto max-h-64"></pre>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
